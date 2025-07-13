@@ -2,7 +2,7 @@ const { MongoClient }  = require('mongodb');
 
 let dbConnection
 // TODO: replace string with environment variable
-let uri = 'mongodb+srv://outmindbros:I7JwWDHKopEq3BId@cluster0.magnzko.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+let uri = process.env.MONGO_URI
 
 module.exports = {
   connectToDb: (cb) => {

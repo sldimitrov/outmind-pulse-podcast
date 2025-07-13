@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express');
 const { connectToDb, getDb} = require('./db');
 const cors = require('cors');
@@ -25,6 +26,16 @@ connectToDb((err) => {
 })
 
 // API Endpoints
+app.get('/subscribers', async (req, res) => {
+  try {
+    const subscribers = await db.collection('subscribers').find().toArray();
+    res.status(200).json(subscribers);
+  } catch (err) {
+    console.log('Error fetching subscribers:', err);
+    res.status(500).json({ error: 'Failed to fetch subscribers'});
+  }
+})
+
 app.post('/subscribe', async (req, res) => {
   const { email } = req.body;
 
