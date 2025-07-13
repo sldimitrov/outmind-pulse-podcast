@@ -112,11 +112,16 @@ const ClipsSection = () => {
         {/* CTA */}
         <div className="text-center mt-16">
           <Button className="btn-hero">
-            <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M9.645 15.182l5.456-2.297c.35-.147.599-.498.599-.885s-.25-.738-.599-.885L9.645 8.818c-.456-.191-.995.039-.995.565v4.234c0 .526.539.756.995.565z"/>
-              <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/>
-            </svg>
-            Follow @outmindpod on TikTok
+            <a href="https://www.tiktok.com/@outmindpod"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center">
+              <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9.645 15.182l5.456-2.297c.35-.147.599-.498.599-.885s-.25-.738-.599-.885L9.645 8.818c-.456-.191-.995.039-.995.565v4.234c0 .526.539.756.995.565z"/>
+                <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/>
+              </svg>
+              Follow @outmindpod on TikTok
+            </a>
           </Button>
         </div>
       </div>

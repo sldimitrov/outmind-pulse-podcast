@@ -13,24 +13,31 @@ const LatestEpisode = () => {
             Catch our newest conversation and dive into the topics shaping our generation
           </p>
         </div>
-
         <div className="card-hover max-w-4xl mx-auto">
           {/* YouTube Embed Placeholder */}
-          <div className="relative aspect-video rounded-xl overflow-hidden mb-8 bg-gradient-to-br from-secondary to-muted group cursor-pointer">
-            <div className="absolute inset-0 bg-black/50 flex items-center justify-center group-hover:bg-black/30 transition-colors duration-300">
-              <PlayCircle className="w-24 h-24 text-primary group-hover:scale-110 transition-transform duration-300" />
+          <div
+              className="relative aspect-video rounded-xl overflow-hidden mb-8 bg-gradient-to-br from-secondary to-muted group cursor-pointer">
+            <div className="relative aspect-video rounded-xl overflow-hidden mb-8">
+              <iframe
+                  src="https://www.youtube.com/embed/fwaoaHzZN00"
+                  title="Episode #23: Breaking the Matrix of Expectations"
+                  className="absolute inset-0 w-full h-full"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+              ></iframe>
             </div>
-            
+
             {/* Placeholder for actual YouTube embed */}
             <div className="absolute top-4 left-4 bg-red-600 px-3 py-1 rounded text-white font-semibold text-sm">
               LIVE
             </div>
-            
+
             <div className="absolute bottom-4 left-4 right-4">
               <div className="bg-black/70 backdrop-blur-sm rounded-lg p-4">
-                <h3 className="text-xl font-semibold mb-2">Episode #23: Breaking the Matrix of Expectations</h3>
+                <h3 className="text-xl font-semibold mb-2">Няма как да успееш в България? – На 19 с големи мечти (OUTMIND S1E1)</h3>
                 <p className="text-muted-foreground text-sm">
-                  Why following the traditional path might be the biggest risk you can take in 2025
+                  Какво е да си на 19, да имаш визия, и да се опитваш да я реализираш в среда, която те дърпа надолу?
                 </p>
               </div>
             </div>
@@ -47,17 +54,24 @@ const LatestEpisode = () => {
                 how to build your own path, and why taking risks early might be the safest move you can make.
               </p>
               <div className="flex gap-3 text-sm text-muted-foreground">
-                <span>Episode #23</span>
+                <span>Episode #1</span>
                 <span>•</span>
                 <span>42 min</span>
                 <span>•</span>
-                <span>Released 3 days ago</span>
+                <span>Released 1 day ago</span>
               </div>
             </div>
 
             <Button className="btn-hero group shrink-0">
-              <ExternalLink className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
-              All Episodes
+              <a
+                href="https://www.youtube.com/@OutmindPod"
+                target="_blank"
+                className="flex"
+              >
+                <ExternalLink className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
+                All Episodes
+              </a>
+
             </Button>
           </div>
         </div>
@@ -65,11 +79,11 @@ const LatestEpisode = () => {
         {/* Quick stats */}
         <div className="flex justify-center gap-8 mt-16">
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary">23</div>
-            <div className="text-muted-foreground">Episodes</div>
+            <div className="text-3xl font-bold text-primary">1</div>
+            <div className="text-muted-foreground">Episode</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary">50K+</div>
+            <div className="text-3xl font-bold text-primary">10+</div>
             <div className="text-muted-foreground">Listeners</div>
           </div>
           <div className="text-center">

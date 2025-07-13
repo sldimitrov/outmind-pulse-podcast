@@ -46,16 +46,24 @@ const HeroSection = () => {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in-up delay-500">
           <Button className="btn-hero group">
-            <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-            Watch on YouTube
-            <ExternalLink className="w-4 h-4 ml-2 opacity-70" />
+            <a
+                href="https://www.youtube.com/watch?v=fwaoaHzZN00&t=3s"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center"
+            >
+              <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
+              Watch on YouTube
+              <ExternalLink  className="w-4 h-4 ml-2 opacity-70" />
+            </a>
+
           </Button>
           
           <Button variant="outline" className="btn-outline-hero group">
             <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-2 15V7l6 5-6 5z"/>
             </svg>
-            Listen on Spotify
+            Listen on Spotify Soon
             <ExternalLink className="w-4 h-4 ml-2 opacity-70" />
           </Button>
         </div>
