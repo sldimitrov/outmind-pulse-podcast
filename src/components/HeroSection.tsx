@@ -59,13 +59,13 @@ const HeroSection = () => {
 
           </Button>
           
-          <Button variant="outline" className="btn-outline-hero group">
-            <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-2 15V7l6 5-6 5z"/>
-            </svg>
-            Listen on Spotify Soon
-            <ExternalLink className="w-4 h-4 ml-2 opacity-70" />
-          </Button>
+          {/*<Button variant="outline" className="btn-outline-hero group">*/}
+          {/*  <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">*/}
+          {/*    <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-2 15V7l6 5-6 5z"/>*/}
+          {/*  </svg>*/}
+          {/*  Listen on Spotify Soon*/}
+          {/*  <ExternalLink className="w-4 h-4 ml-2 opacity-70" />*/}
+          {/*</Button>*/}
         </div>
 
         {/* Scroll Indicator */}

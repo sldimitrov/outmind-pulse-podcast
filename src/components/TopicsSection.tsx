@@ -49,7 +49,7 @@ const TopicsSection = () => {
             from two Gen Z entrepreneurs who are building their future in real-time.
           </p>
           
-          <div className="flex justify-center gap-4 mt-8">
+          <div className="flex flex-col items-center sm:flex-row justify-center gap-4 mt-8">
             <div className="bg-primary/10 px-6 py-3 rounded-full">
               <span className="text-primary font-semibold">Real Stories</span>
             </div>

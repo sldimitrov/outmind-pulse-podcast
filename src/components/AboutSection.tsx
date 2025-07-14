@@ -28,11 +28,11 @@ const AboutSection = () => {
               </p>
               
               <p className="font-semibold text-foreground">
-                Raw conversations. Real perspectives. No filter.
+                Raw conversations. Real perspectives.
               </p>
             </div>
 
-            <div className="flex gap-4 mt-10">
+            <div className="flex flex-col sm:flex-row items-center gap-4 mt-10">
               <div className="bg-primary/10 px-4 py-2 rounded-full">
                 <span className="text-primary font-semibold">19 years old</span>
               </div>

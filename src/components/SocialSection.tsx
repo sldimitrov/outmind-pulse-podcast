@@ -57,7 +57,7 @@ const SocialSection = () => {
                             </div>
                             <h3 className="font-montserrat font-bold text-xl mb-2">YouTube</h3>
                             <p className="text-muted-foreground mb-4">Full episodes & behind the scenes</p>
-                            <div className="text-2xl font-bold text-primary mb-2">10+</div>
+                            <div className="text-2xl font-bold text-primary mb-2">20+</div>
                             <div className="text-sm text-muted-foreground">Subscribers</div>
                         </div>
 
@@ -69,9 +69,9 @@ const SocialSection = () => {
                                     className="w-8 h-8 text-green-600 group-hover:text-white transition-colors duration-300"/>
                             </div>
                             <h3 className="font-montserrat font-bold text-xl mb-2">Spotify</h3>
-                            <p className="text-muted-foreground mb-4">Audio episodes on the go</p>
-                            <div className="text-2xl font-bold text-primary mb-2">15K</div>
-                            <div className="text-sm text-muted-foreground">Monthly Listeners</div>
+                            <p className="text-muted-foreground mb-4">Soon</p>
+                            <div className="text-2xl font-bold text-primary mb-2">RELEASE SOON</div>
+                            <div className="text-sm text-muted-foreground">Stay Tuned</div>
                         </div>
 
                         {/* Instagram */}
@@ -82,7 +82,7 @@ const SocialSection = () => {
                             </div>
                             <h3 className="font-montserrat font-bold text-xl mb-2">Instagram</h3>
                             <p className="text-muted-foreground mb-4">Daily insights & stories</p>
-                            <div className="text-2xl font-bold text-primary mb-2">31K</div>
+                            <div className="text-2xl font-bold text-primary mb-2">50</div>
                             <div className="text-sm text-muted-foreground">Followers</div>
                         </div>
 
@@ -97,7 +97,7 @@ const SocialSection = () => {
                             </div>
                             <h3 className="font-montserrat font-bold text-xl mb-2">TikTok</h3>
                             <p className="text-muted-foreground mb-4">Viral clips & hot takes</p>
-                            <div className="text-2xl font-bold text-primary mb-2">87K</div>
+                            <div className="text-2xl font-bold text-primary mb-2">5</div>
                             <div className="text-sm text-muted-foreground">Followers</div>
                         </div>
                     </div>
@@ -139,7 +139,7 @@ const SocialSection = () => {
 
                     {/* Quick Links */}
                     <div className="flex flex-col sm:flex-row justify-center gap-8 mt-16">
-                        <Button variant="ghost" className="text-muted-foreground hover:text-primary">
+                        <Button variant="ghost" className="text-muted-foreground hover:text-color-primary">
                             <a
                                 href="https://www.youtube.com/@OutmindPod"
                                 target="_blank"
@@ -151,13 +151,13 @@ const SocialSection = () => {
 
                         </Button>
 
-                        <Button variant="ghost" className="text-muted-foreground hover:text-primary">
-                            <Music className="w-5 h-5 mr-2"/>
-                            Spotify
-                            <ArrowRight className="w-4 h-4 ml-2"/>
-                        </Button>
+                        {/*<Button variant="ghost" className="text-muted-foreground hover:text-primary">*/}
+                        {/*    <Music className="w-5 h-5 mr-2"/>*/}
+                        {/*    Spotify*/}
+                        {/*    <ArrowRight className="w-4 h-4 ml-2"/>*/}
+                        {/*</Button>*/}
 
-                        <Button variant="ghost" className="text-muted-foreground hover:text-primary">
+                        <Button variant="ghost" className="text-muted-foreground hover:text-color-primary">
                             <a
                                 href="https://www.instagram.com/outmindpod/"
                                 target="_blank"
