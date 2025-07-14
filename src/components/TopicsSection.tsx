@@ -20,7 +20,7 @@ const TopicsSection = () => {
             Topics We <span className="text-gradient">Cover</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            From breaking mental barriers to building empires — we dive deep into what matters
+            From breaking mental barriers to building empires - we dive deep into what matters
           </p>
         </div>
 
@@ -45,7 +45,7 @@ const TopicsSection = () => {
         {/* Additional context */}
         <div className="mt-16 text-center">
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            We don't just talk about these topics — we live them. Every episode brings raw insights 
+            We don't just talk about these topics - we live them. Every episode brings raw insights
             from two Gen Z entrepreneurs who are building their future in real-time.
           </p>
           

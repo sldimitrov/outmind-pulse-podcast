@@ -84,7 +84,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="text-center text-muted-foreground text-sm">
-            <p>&copy; 2025 Outmind — Think beyond.</p>
+            <p>&copy; 2025 Outmind - Think beyond.</p>
             <div className="flex justify-center gap-4 mt-2">
               <a href="#" className="hover:text-primary transition-colors">Privacy</a>
               <span>•</span>

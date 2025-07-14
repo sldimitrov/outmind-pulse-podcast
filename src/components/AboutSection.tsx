@@ -17,7 +17,7 @@ const AboutSection = () => {
               </p>
               
               <p>
-                <span className="text-primary font-semibold">Outmind</span> is the unfiltered voice of Gen Z — 
+                <span className="text-primary font-semibold">Outmind</span> is the unfiltered voice of Gen Z -
                 mindset, business, identity, and building beyond borders.
               </p>
               
