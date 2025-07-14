@@ -56,6 +56,23 @@ app.post('/subscribe', async (req, res) => {
   }
 })
 
+// Analytics endpoint
+app.post('/events', async (req, res) => {
+  const event = req.body
+
+  if (!event || !event.timestamp) {
+    return res.status(400).json({ error: 'Invalid event data' });
+  }
+
+  try {
+    await db.collection('events').insertOne(event)
+    res.status(201).json({ message: 'Event recorded successfully' });
+  } catch (err) {
+    console.log('Error recording event:', err);
+    res.status(500).json({ error: 'Failed to record event' });
+  }
+})
+
 // Health check endpoint
 app.get('/', (req, res) => {
   res.send('Outmind API is running!')
