@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  margin: 0;
+  padding: 0
+}
+
 /* Outmind Podcast Design System - Gen Z Sharp & Modern */
 @layer base {
   :root {

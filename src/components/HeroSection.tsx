@@ -25,7 +25,7 @@ const HeroSection = () => {
           <img 
             src={outmindLogo} 
             alt="Outmind Logo" 
-            className="w-32 h-32 mx-auto mb-6 hover:scale-110 transition-transform duration-300"
+            className="w-32 h-32 mx-auto rounded-sm mb-6 hover:scale-110 transition-transform duration-300"
           />
         </div>
 
@@ -69,7 +69,7 @@ const HeroSection = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute mt-20 left-1/2 transform -translate-x-1/2 animate-bounce">
           <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center">
             <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse"></div>
           </div>

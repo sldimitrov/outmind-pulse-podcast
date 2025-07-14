@@ -66,7 +66,7 @@ const LatestEpisode = () => {
             <div className="text-muted-foreground">Episode</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary">10+</div>
+            <div className="text-3xl font-bold text-primary">20+</div>
             <div className="text-muted-foreground">Listeners</div>
           </div>
           <div className="text-center">

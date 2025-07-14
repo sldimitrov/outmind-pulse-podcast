@@ -10,7 +10,7 @@ const Footer = () => {
             <img 
               src={outmindLogo} 
               alt="Outmind Logo" 
-              className="w-16 h-16 mx-auto mb-4 opacity-80 hover:opacity-100 transition-opacity"
+              className="w-24 h-24 rounded-sm mx-auto mb-4 opacity-80 hover:opacity-100 transition-opacity"
             />
             <h3 className="text-2xl font-montserrat font-bold text-gradient mb-2">
               OUTMIND

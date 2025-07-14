@@ -138,7 +138,7 @@ const SocialSection = () => {
                     </div>
 
                     {/* Quick Links */}
-                    <div className="flex justify-center gap-8 mt-16">
+                    <div className="flex flex-col sm:flex-row justify-center gap-8 mt-16">
                         <Button variant="ghost" className="text-muted-foreground hover:text-primary">
                             <a
                                 href="https://www.youtube.com/@OutmindPod"
