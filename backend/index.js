@@ -2,6 +2,7 @@ require('dotenv').config()
 const express = require('express');
 const { connectToDb, getDb} = require('./db');
 const cors = require('cors');
+const {ObjectId} = require("mongodb");
 
 const app = express();
 // TODO: replace string with environment variable
@@ -25,7 +26,7 @@ connectToDb((err) => {
   }
 })
 
-// API Endpoints
+// Subscriber routes
 app.get('/subscribers', async (req, res) => {
   try {
     const subscribers = await db.collection('subscribers').find().toArray();
@@ -53,6 +54,70 @@ app.post('/subscribe', async (req, res) => {
   } catch(err) {
     console.log('Error inserting subscriber:', err);
     res.status(500).json({ error: 'Failed to subscribe'});
+  }
+})
+
+// Clips routes
+app.post('/clips', async (req, res) => {
+  const { title, description, embed } = req.body;
+
+  if (!title || !description || !embed) {
+    return res.status(400).json({ error: 'Title, description, and embed are required' });
+  }
+
+  try {
+    const result = await db.collection('clips').insertOne({
+      title,
+      description,
+      embed,
+      createdAt: new Date()
+    })
+
+    res.status(201).json({ message: 'Clip posted successfully', id: result.insertedId });
+  } catch (err) {
+    console.log('Error inserting clip:', err);
+    return res.status(500).json({ error: 'Failed to post clip'})  }
+})
+
+app.patch('/clips/:id', async (req, res) => {
+  const { id } = req.params;
+  const { title, description, embed } = req.body
+
+  try {
+    const result = await db.collection('clips').updateOne(
+      { _id: new ObjectId(id) },
+      {
+        $set: {
+          title, description, embed, updatedAt: new Date()
+        }
+      })
+
+    if (result.matchedCount === 0) {
+      return res.status(404).json({ error: 'Clip not found' });
+    }
+
+    res.status(200).json({ message: 'Clip updated successfully' });
+  } catch (err) {
+    console.log('Error updating clip:', err);
+    res.status(500).json({ error: 'Failed to update clip' });
+  }
+})
+
+app.delete('/clips/:id', async (req, res) => {
+  const { id } = req.params;
+  const objectId = new ObjectId(id);
+
+  try {
+    const result = await db.collection('clips').deleteOne({ _id: objectId });
+
+    if (result.matchedCount === 0) {
+      return res.status(404).json({ error: 'Clip not found' });
+    }
+
+    res.status(200).json({ message: 'Clip deleted successfully' });
+  } catch (err) {
+    console.log('Error deleting clip:', err);
+    res.status(500).json({ error: 'Failed to delete clip' });
   }
 })
 
