@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Play, ExternalLink } from "lucide-react";
 import outmindLogo from "@/assets/outmind-logo.png";
 import heroBg from "@/assets/hero-bg.jpg";
+import {Link} from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -13,8 +14,11 @@ const HeroSection = () => {
         backgroundPosition: 'center',
       }}
     >
+      <Link to="/admin" className="absolute top-4 left-4 text-muted-foreground">
+        Go to Admin
+      </Link>
       {/* Animated background elements */}
-      <div className="absolute inset-0 opacity-30">
+      <div className="absolute inset-0 opacity-30 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-blue-500/10 rounded-full blur-2xl animate-pulse delay-1000"></div>
       </div>
