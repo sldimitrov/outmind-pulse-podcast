@@ -1,12 +1,12 @@
+import axios from 'axios';
+
 export default async function subscribeUser(email) {
-  return fetch('https://outmind-pulse-podcast.onrender.com/subscribe', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ email })
-  }).then((res) => {
-    if (!res.ok) throw new Error('Subscription failed')
-    return res.json()
-  })
+  return axios.post('https://outmind-pulse-podcast.onrender.com/subscribe', { email })
+    .then(function (response) {
+      console.log('User subscribed successfully:', response.data);
+      return response.data
+    }).catch(function (error) {
+      console.error('Error subscribing user:', error);
+      throw new Error('Failed to subscribe user');
+    })
 }
